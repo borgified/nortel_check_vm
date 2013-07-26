@@ -47,7 +47,9 @@ sub run{
 	$mech->get($newurl);
 
 	$stuff=$mech->content();
-	
+
+	#COS is a field that determines how many minutes of capacity your mailbox has.
+
 	if($stuff=~/5557(.*)none/){
 		my $email="
                                                    -Total- --New-- -Unsent-Out
